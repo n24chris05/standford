@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92062A97183A44FC0096ECD3 /* CalculatorBrain.m in Sources */ = {isa = PBXBuildFile; fileRef = 92062A96183A44FC0096ECD3 /* CalculatorBrain.m */; };
 		929A26351839185F0026DA01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 929A26341839185F0026DA01 /* Foundation.framework */; };
 		929A26371839185F0026DA01 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 929A26361839185F0026DA01 /* CoreGraphics.framework */; };
 		929A26391839185F0026DA01 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 929A26381839185F0026DA01 /* UIKit.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		92062A95183A44FC0096ECD3 /* CalculatorBrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorBrain.h; sourceTree = "<group>"; };
+		92062A96183A44FC0096ECD3 /* CalculatorBrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorBrain.m; sourceTree = "<group>"; };
 		929A26311839185F0026DA01 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		929A26341839185F0026DA01 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		929A26361839185F0026DA01 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -130,6 +133,8 @@
 				929A263D1839185F0026DA01 /* InfoPlist.strings */,
 				929A26401839185F0026DA01 /* main.m */,
 				929A26421839185F0026DA01 /* Calculator-Prefix.pch */,
+				92062A95183A44FC0096ECD3 /* CalculatorBrain.h */,
+				92062A96183A44FC0096ECD3 /* CalculatorBrain.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -252,6 +257,7 @@
 			files = (
 				929A26451839185F0026DA01 /* calculatorAppDelegate.m in Sources */,
 				929A264B1839185F0026DA01 /* calculatorViewController.m in Sources */,
+				92062A97183A44FC0096ECD3 /* CalculatorBrain.m in Sources */,
 				929A26411839185F0026DA01 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
