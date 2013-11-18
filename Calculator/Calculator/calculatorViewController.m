@@ -16,8 +16,14 @@
 @synthesize display = _display;
 
 - (IBAction)digitPressed:(UIButton *)sender {
-    NSString *myString = [sender currentTitle];
-    NSLog (@"%@",myString);
+    NSString *digit = [sender currentTitle];
+    UILabel *myDisplay = self.display; //getting the pointer to UILabel
+    //Get the current text of UILabel
+    NSString *currentText = [myDisplay text];
+    //Append text
+    NSString *newText = [currentText stringByAppendingString:digit];
+    [myDisplay setText:newText];
+
 }
 
 @end
