@@ -115,6 +115,8 @@
 		929A263A1839185F0026DA01 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				92062A95183A44FC0096ECD3 /* CalculatorBrain.h */,
+				92062A96183A44FC0096ECD3 /* CalculatorBrain.m */,
 				929A26431839185F0026DA01 /* calculatorAppDelegate.h */,
 				929A26441839185F0026DA01 /* calculatorAppDelegate.m */,
 				929A26461839185F0026DA01 /* Main.storyboard */,
@@ -133,8 +135,6 @@
 				929A263D1839185F0026DA01 /* InfoPlist.strings */,
 				929A26401839185F0026DA01 /* main.m */,
 				929A26421839185F0026DA01 /* Calculator-Prefix.pch */,
-				92062A95183A44FC0096ECD3 /* CalculatorBrain.h */,
-				92062A96183A44FC0096ECD3 /* CalculatorBrain.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
