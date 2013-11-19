@@ -8,23 +8,23 @@
 
 #import "CalculatorBrain.h"
 @interface CalculatorBrain ()
-@property (nonatomic,strong)NSMutableArray *operandStack;
+@property (nonatomic,strong)NSMutableArray *programStack;
 
 @end
 @implementation CalculatorBrain
 
-@synthesize operandStack = _operandStack;
+@synthesize programStack = _programStack;
 
--(NSMutableArray *)operandStack
+-(NSMutableArray *)programStack
 {
-    if (!_operandStack)
-        _operandStack = [[NSMutableArray alloc]init];
-    return _operandStack;
+    if (!_programStack)
+        _programStack = [[NSMutableArray alloc]init];
+    return _programStack;
 }
 
 -(void)pushOperand: (double)operand
 {
-    [self.operandStack addObject:[NSNumber numberWithDouble:operand]];
+    [self.programStack addObject:[NSNumber numberWithDouble:operand]];
 }
 -(double)popOperand
 {
@@ -34,6 +34,9 @@
 }
 -(double)performOperation:(NSString *)operation
 {
+    [self.programStack addObject:operation];
+    return [[CalculatorBrain runProgram:self.program]];
+}
     double result = 0;
     
     if ([operation isEqualToString:@"+"]){
