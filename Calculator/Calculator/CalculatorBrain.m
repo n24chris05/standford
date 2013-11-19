@@ -17,7 +17,8 @@
 
 -(NSMutableArray *)operandStack
 {
-    if (_operandStack)_operandStack = [[NSMutableArray alloc]init];
+    if (!_operandStack)
+        _operandStack = [[NSMutableArray alloc]init];
     return _operandStack;
 }
 
@@ -45,8 +46,7 @@
     }else if ([operation isEqualToString:@"/"]){
     
     }
-    NSLog (@"%f",result);
-    [self pushOperand:result];
+        [self pushOperand:result];
     return result;
 }
 
